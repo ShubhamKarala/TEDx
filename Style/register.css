@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: sans-serif;
+}
+nav {
+  background-color: black !important;
+}
+
+#current {
+  font-weight: 500;
+}
+
+#formSpace {
+  height: calc(100vh + 4.6875rem);
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../Images/RedBackground.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formSpace svg {
+  position: absolute;
+}
+
+.formBox {
+  width: 23.75rem;
+  min-height: 32rem;
+  height: 35rem;
+  position: relative;
+  background-color: rgba(26, 27, 29, 0.27);
+  border-radius: 20px;
+  padding: 5px;
+  overflow: hidden;
+  backdrop-filter: blur(35px);
+  box-shadow: 0 0 61px 0 rgba(0, 0, 0, 0.17), 0 2px 20px 0 rgba(0, 0, 0, 0.59);
+}
+.formBox .input-value select {
+  background: none;
+  color: #999;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.5px solid #999;
+  padding: 0.5rem 0;
+}
+
+.btnBox {
+  width: 13.75rem;
+  border-radius: 30px;
+  margin: 2rem auto;
+  position: relative;
+
+  background-color: black;
+}
+
+.toggleBtn {
+  padding: 10px 27px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+#btnColor {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #eb0028, #910018);
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+.input {
+  position: absolute;
+  width: 17.5rem;
+  transition: all 0.5s;
+}
+
+.inputField {
+  width: 100%;
+  padding: 5px 0;
+  margin: 6px 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  color: white;
+  outline: none;
+  background: transparent;
+  font-size: 0.8rem;
+}
+
+.inputName {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.inputName .block {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit {
+  display: block;
+  margin: 1.5rem auto 0.5rem auto;
+  background: linear-gradient(to right, #eb0028, #910018);
+  color: white;
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+#login {
+  left: 50px;
+  top: 12rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login .align {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#validate_form {
+  left: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#validate_form p,
+#login p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+#login .align p {
+  position: relative;
+  align-self: end;
+}
+
+#validate_form p #link,
+#login p #link {
+  color: #eb0028;
+  cursor: pointer;
+  left: 0 !important;
+}
+
+#validate_form .input-value {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.checkbox {
+  align-self: baseline;
+  margin: 0.6rem 0.3rem;
+}
+
+#login .checkbox {
+  margin: 0.6rem 0rem;
+}
+
+.checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.checkbox label input {
+  font-size: 0.7rem;
+  height: 0.7rem;
+  width: 0.7rem;
+}
+
+.verifyYourEmail,
+.emailVerified {
+  color: black !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-color: white;
+  opacity: 0;
+  user-select: none;
+  transform: scale(0);
+}
+
+.reveal {
+  animation: expand 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35) 1 forwards;
+}
+
+.verifyYourEmail p,
+.emailVerified p {
+  color: black !important;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3rem !important;
+}
+.verifyYourEmail .smallTxt,
+.emailVerified .smallTxt {
+  font-size: 0.9rem !important;
+}
+
+.verifyYourEmail ion-icon,
+.emailVerified ion-icon {
+  color: #0b0;
+  height: 50%;
+  width: 50%;
+  --ionicon-stroke-width: 0.5rem;
+}
+
+@keyframes expand {
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

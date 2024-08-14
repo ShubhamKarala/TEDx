@@ -1,0 +1,100 @@
+@media (max-width: 28.125rem) {
+  nav .navbar .menu {
+    gap: 1vw;
+  }
+  .countdown {
+    width: 73vw;
+    height: 20vw;
+    gap: 3vw;
+  }
+  .cell {
+    height: 57%;
+    overflow: hidden;
+    position: relative;
+    top: -0.3125rem;
+  }
+  .cell h2 {
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+  }
+  .cell p {
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 61.875rem) and (orientation: landscape) {
+  .countdown {
+    width: 73vw;
+    height: 20vw;
+    gap: 3vw;
+  }
+  .cell {
+    height: 57%;
+    overflow: hidden;
+    position: relative;
+    top: -1.0625rem;
+  }
+  .cell h2 {
+    letter-spacing: 0.3rem;
+    font-size: clamp(3rem, 10.2vw, 56rem);
+    overflow: hidden;
+  }
+  .cell p {
+    letter-spacing: 0.3rem;
+    font-size: clamp(0.5rem, 3.2vw, 39rem);
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 58.75rem) {
+  .heading {
+    width: 100vw;
+    display: grid;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .heading p {
+    justify-self: center;
+  }
+  .change {
+    width: 100vw;
+    height: 1.75rem;
+    display: grid;
+  }
+}
+
+@media (max-width: 28.125rem) {
+  .description {
+    flex-direction: column;
+    display: flex;
+    margin: 5vw 16vw;
+    gap: 13vw;
+  }
+
+  .heading p {
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .cell h2 {
+    letter-spacing: 0.1rem;
+  }
+  .cell p {
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media (max-width: 80rem) {
+  #Home {
+    font-size: 1.1rem;
+    letter-spacing: 1rem;
+  }
+  .heading p {
+    overflow-x: visible;
+  }
+  .countdown {
+    gap: 2vw;
+  }
+}

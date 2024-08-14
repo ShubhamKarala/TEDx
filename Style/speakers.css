@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo&family=Rowdies:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=M+PLUS+Rounded+1c&family=Zain:wght@200;300;400;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#current {
+  font-weight: 500;
+}
+
+#backLayout {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../Images/RedBackground.svg);
+  background-size: auto, auto;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-size: cover;
+}
+
+nav {
+  background-color: black;
+}
+
+section {
+  display: flex;
+  max-height: 100vh;
+  width: 100vw;
+
+  color: #272727;
+  padding: 7vw 0rem 0 0;
+}
+
+#SpeakerDesc {
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.displaySpeaker {
+  display: flex;
+  max-height: 100vh;
+}
+
+.displayContent {
+  max-width: 50vw;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  filter: blur(5px);
+  transform: translateY(70%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.fullname {
+  color: #fff;
+  /* font-family: "Rowdies";
+  font-weight: 700; */
+  /* font-style: normal; */
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 4rem;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#surname {
+  font-size: 5rem;
+}
+
+#title {
+  color: #ff0145;
+  font-family: KoHo;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+}
+
+.handles {
+  display: flex;
+  gap: 1rem;
+}
+
+.circle {
+  width: 2.25rem;
+  height: 2.25rem;
+  /* background-color: white; */
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle a {
+  text-decoration: none;
+  color: #fff8;
+  font-size: 1.25em;
+  line-height: 0;
+  transition: 0.25s;
+}
+
+.circle a:hover,
+.circle a.active {
+  color: #ffff;
+}
+
+#desc {
+  color: #fff;
+  font-family: KoHo;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.speakerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  filter: blur(10px);
+  opacity: 0;
+  transition: all 1.2s;
+}
+.speakerImage img {
+  max-height: 30vw;
+  width: 22vw;
+}
+
+#otherSpeakers {
+  display: flex;
+  flex-direction: column;
+  max-height: fit-content;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+
+#otherSpeakers h1 {
+  color: #ff0101;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 5rem;
+  line-height: normal;
+}
+
+#otherSpeakers span {
+  width: 18rem;
+  height: 0.3rem;
+  background: white;
+  position: relative;
+  bottom: 0.8rem;
+  left: 1rem;
+  z-index: -1;
+}
+
+.button a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  background-color: black;
+  border-radius: 5px;
+  height: 23px;
+  width: 23px;
+}

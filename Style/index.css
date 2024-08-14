@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: fixed url(../Images/BlackBackground.svg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#current {
+  font-weight: 500;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  color: #272727;
+}
+
+#Home {
+  color: #ff0145;
+  font-family: "KoHo", sans-serif;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 1.38rem;
+  gap: 2rem;
+}
+
+.heading {
+  display: inline-flex;
+  width: 63vw;
+  gap: 2rem;
+}
+.change {
+  position: relative;
+  width: 39vw;
+  overflow: hidden;
+}
+
+.whiteLine {
+  color: white;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s all ease-out;
+  overflow: hidden;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#About {
+  background: #f2f2f2;
+  height: max-content;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.description {
+  display: flex;
+  margin: 5vw 16vw;
+  gap: 13vw;
+  min-height: 70vh;
+}
+.heading-big {
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+#redLine {
+  background-color: #e62b1e;
+  width: 5rem;
+  height: 0.25rem;
+  margin: 0.125rem 0 0.8125rem;
+  display: block;
+}
+
+.para {
+  font-size: 1.0625rem;
+  font-weight: 230;
+  line-height: 1.5rem;
+}
+.aboutTEDx {
+  border: 2px solid black;
+  padding: 2rem;
+}
+.heading-small {
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+  font-weight: 300;
+}
+
+#timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 30vw;
+  overflow: hidden;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 47vw;
+  height: 13vw;
+  background: no-repeat url(../Images/Ticket.svg);
+  background-size: contain;
+  gap: 2.2vw;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 2.2vw, 61rem);
+  letter-spacing: 0.37625rem;
+}
+
+.cell h2 {
+  font-size: clamp(2rem, 5.2vw, 39rem);
+  letter-spacing: 0.43rem;
+  overflow: hidden;
+}
+
+#footer {
+  padding: 0 0 2rem 0 !important;
+}

@@ -1,0 +1,72 @@
+@media (max-width: 58.75rem) {
+  .dashboard {
+    width: fit-content;
+    justify-content: left;
+    grid-template-rows: 0.5fr 0.9fr 0.9fr 0.21fr;
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+    grid-template-areas:
+      "hero    "
+      "picture "
+      "personal"
+      "sidebar ";
+  }
+  .dashboard .navigation {
+    width: 20.063rem;
+    height: 3.313rem;
+    flex-direction: row;
+    position: sticky;
+    z-index: 5;
+    bottom: 23px;
+  }
+  .dashboard .navigation ion-icon {
+    font-size: 1.5rem;
+  }
+  .dashboard .navigation .expand,
+  .dashboard .navigation .expandSmall {
+    display: none;
+  }
+  .dashboard .hero {
+    width: 17.313rem;
+    height: 4.813rem;
+  }
+  .dashboard .hero h1 {
+    font-size: 1.5rem;
+  }
+  .dashboard .hero p {
+    font-size: 0.78rem;
+  }
+  .dashboard .personalInfo {
+    gap: 1.2rem;
+    font-size: 0.9rem;
+    width: 17.313rem;
+    height: 9.25rem;
+    padding: 2.3rem 1.5rem;
+  }
+  .dashboard .personalInfo .cred {
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .dashboard .profilePic .photo {
+    width: 10rem;
+    height: 10rem;
+  }
+  .dashboard .profilePic p {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  .dashboard .imgUpload {
+    width: 88%;
+  }
+  .dashboard .imgUpload form {
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  .dashboard .imgUpload form button {
+    padding: 7px 15px;
+    font-size: 0.9rem;
+  }
+  .dashboard .imgUpload ion-icon {
+    font-size: 1.6rem;
+  }
+}

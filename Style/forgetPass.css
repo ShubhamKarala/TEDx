@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: sans-serif;
+}
+nav {
+  background-color: black !important;
+}
+
+#formSpace {
+  height: calc(100vh + 4.6875rem);
+  width: 100vw;
+  background: no-repeat linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../Images/RedBackground.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 4rem; */
+}
+
+.formBox {
+  width: 23.75rem;
+  height: 28rem;
+  position: relative;
+  background-color: rgba(26, 27, 29, 0.27);
+  border-radius: 20px;
+  padding: 5px;
+  overflow: hidden;
+  backdrop-filter: blur(35px);
+  box-shadow: 0 0 61px 0 rgba(0, 0, 0, 0.17), 0 2px 20px 0 rgba(0, 0, 0, 0.59);
+}
+
+.reco {
+  width: 23.75rem;
+  height: 20rem;
+  position: relative;
+  background-color: rgba(26, 27, 29, 0.27);
+  border-radius: 20px;
+  padding: 5px;
+  overflow: hidden;
+  backdrop-filter: blur(35px);
+  box-shadow: 0 0 61px 0 rgba(0, 0, 0, 0.17), 0 2px 20px 0 rgba(0, 0, 0, 0.59);
+}
+
+.btnBox {
+  padding: 10px 30px;
+  width: 13.75rem;
+  border-radius: 30px;
+  margin: 2rem auto;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(to right, #eb0028, #910018);
+}
+
+.input {
+  position: absolute;
+  width: 17.5rem;
+  transition: all 0.5s;
+}
+
+.inputField {
+  width: 100%;
+  padding: 5px 0;
+  margin: 6px 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  color: white;
+  outline: none;
+  background: transparent;
+  font-size: 0.8rem;
+}
+
+.inputName {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.inputName .block {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit {
+  display: block;
+  margin: 1.5rem auto 0.5rem auto;
+  background: linear-gradient(to right, #eb0028, #910018);
+  color: white;
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+#forget,
+#recovery {
+  left: 50px;
+  top: 9rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#recovery {
+  top: 8rem !important;
+}
+
+#forget .align {
+  top: -2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#recovery .align {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#forget p,
+#recovery p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+#forget .align p,
+#recovery .align p {
+  position: relative;
+  align-self: center;
+}
+
+#forget p #link,
+#recovery p #link {
+  color: #eb0028;
+  cursor: pointer;
+  left: 0 !important;
+}
+
+.checkbox {
+  align-self: baseline;
+  margin: 0.6rem 2.3rem;
+}
+
+#forget .checkbox {
+  margin: 0.6rem 0rem;
+}
+
+.checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.checkbox label input {
+  font-size: 0.7rem;
+  height: 0.7rem;
+  width: 0.7rem;
+}
+
+.resPass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-color: white;
+  top: -6.5rem;
+  opacity: 0;
+  user-select: none;
+  transform: scale(0);
+}
+
+.reveal {
+  animation: expand 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35) 1 forwards;
+}
+
+.resPass p {
+  color: black !important;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3rem !important;
+}
+
+.resPass .smallTxt {
+  font-size: 0.9rem !important;
+}
+
+.resPass ion-icon {
+  color: #0b0;
+  height: 50%;
+  width: 50%;
+  --ionicon-stroke-width: 0.5rem;
+}
+
+@keyframes expand {
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
